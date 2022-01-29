@@ -45,9 +45,11 @@
 
       <script type="text/javascript">
       var d = new Date();
+      var m = new Date();
+      var y = new Date();
       document.getElementById("year").innerHTML = d.getFullYear();
-      document.getElementById("month").innerHTML = d.getMonth();
-      document.getElementById("day").innerHTML = d.getDate();
+      document.getElementById("month").innerHTML = m.getMonth();
+      document.getElementById("day").innerHTML = y.getDate();
       <!--document.write(today);
       <!--  console.log(today);-->
       </script>
@@ -66,7 +68,7 @@
     </form>
     
     <h1>
-     <p id="day">.</p><p id="month">.</p><p id="year">3453453</p>
+     <p id="day">.</p><p id="month">.</p><p id="year"></p>
     </h1>
     
     <h2>The Conqueror Worm, <em>Edgar Allen Poe, 1843 Update?</em></h2>
