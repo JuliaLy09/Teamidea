@@ -104,7 +104,7 @@
 
         let request = new XMLHttpRequest();
         request.open('GET', url);
-        request.responseType = 'text';
+        request.responseType = 'json';
 
         request.onload = function() {
           poemDisplay.textContent = request.response;
