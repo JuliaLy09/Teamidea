@@ -34,7 +34,8 @@
         width: 350px;
         padding: 5px;
       }
-
+      var today = new Date();
+      alert( today );
     </style>
     <!--[if lt IE 9]>
       <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script>
@@ -45,7 +46,8 @@
     <h1>Basic XHR example</h1>
 
     <form>
-      <label for="verse-choose">Choose a verse</label>
+      <label for="verse-choose">Дата сегодня?</label>
+      document.write(today);
       <select id="verse-choose" name="verse-choose">
         <option>Verse 1</option>
         <option>Verse 2</option>
