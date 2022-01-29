@@ -104,7 +104,7 @@
 
         let request = new XMLHttpRequest();
         request.open('GET', url);
-        request.responseType = 'json';
+        request.responseType = 'txt';
 
         request.onload = function() {
           poemDisplay.textContent = request.response;
@@ -112,7 +112,11 @@
 
         request.send();
       };
-
+      
+      var obj = JSON.parse('request.response');
+      document.getElementById("api").innerHTML = obj.timezone + ", " + obj.temp; 
+      
+       <!--        Это можно будет закоментить-->
       updateDisplay('Verse 1');
       verseChoose.value = 'Verse 1';
 
