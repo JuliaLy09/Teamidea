@@ -44,7 +44,7 @@
   <body>
     <h1>Basic XHR example</h1>
 
-<!--    <form>
+    <form>
       <label for="verse-choose">Choose a verse</label>
       <select id="verse-choose" name="verse-choose">
         <option>Verse 1</option>
@@ -52,13 +52,13 @@
         <option>Verse 3</option>
         <option>Verse 4</option>
       </select>
-    </form>-->
+    </form>
 
     <h2>The Conqueror Worm, <em>Edgar Allen Poe, 1843 Update?</em></h2>
 
-  <!--   <pre>
+    <pre>
 
-    </pre>-->
+    </pre>
 
     <script>
       const verseChoose = document.querySelector('select');
@@ -70,9 +70,11 @@
       };
 
       function updateDisplay(verse) {
-        verse = verse.replace(" ", "");
-        verse = verse.toLowerCase();
-        let url = verse + '.txt';
+ <!--   verse = verse.replace(" ", "");
+ <!--       verse = verse.toLowerCase();
+ <!--       let url = verse + '.txt'; -->
+ <!--        let url = 'https://api.openweathermap.org/data/2.5/onecall?lat=33.44&lon=-94.04&exclude=hourly,daily&appid=9c9278b6ff53fc3ff704cedb3d0ad747';-->
+        let url = 'test.txt';
 
         let request = new XMLHttpRequest();
         request.open('GET', url);
