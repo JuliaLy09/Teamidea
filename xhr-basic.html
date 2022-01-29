@@ -42,14 +42,15 @@
   </head>
 
   <body>
-    <h1>Basic XHR example</h1>
+
       <script type="text/javascript">
-      var today = new Date()
       var d = new Date();
-document.getElementById("demo").innerHTML = d.getMinutes();
+      document.getElementById("today").innerHTML = d.getFullYear();
       <!--document.write(today);
       <!--  console.log(today);-->
       </script>
+    
+    <h1>Basic XHR example</h1>
     <form>
       <label for="verse-choose">Дата сегодня?</label>
      document.write(today);
@@ -61,7 +62,11 @@ document.getElementById("demo").innerHTML = d.getMinutes();
         <option>Verse 4</option>
       </select>
     </form>
-<p id="today"></p>
+    
+    <h1>
+      <p id="today"></p>
+    </h1>
+    
     <h2>The Conqueror Worm, <em>Edgar Allen Poe, 1843 Update?</em></h2>
 
     <pre>
