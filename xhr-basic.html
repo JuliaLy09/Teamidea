@@ -45,7 +45,9 @@
 
       <script type="text/javascript">
       var d = new Date();
-      document.getElementById("today").innerHTML = d.getFullYear();
+      document.getElementById("year").innerHTML = d.getFullYear();
+      document.getElementById("month").innerHTML = d.getMonth();
+      document.getElementById("day").innerHTML = d.getDate();
       <!--document.write(today);
       <!--  console.log(today);-->
       </script>
@@ -64,7 +66,7 @@
     </form>
     
     <h1>
-      <p id="today"></p>
+     <p id="day">.</p><p id="month">.</p><p id="year"></p>
     </h1>
     
     <h2>The Conqueror Worm, <em>Edgar Allen Poe, 1843 Update?</em></h2>
