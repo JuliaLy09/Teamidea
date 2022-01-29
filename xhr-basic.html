@@ -85,7 +85,7 @@
     <pre>
 
     </pre>
-
+<h2> <p> Check</p></em></h2>
     <script>
       const verseChoose = document.querySelector('select');
       const poemDisplay = document.querySelector('pre');
@@ -104,7 +104,7 @@
 
         let request = new XMLHttpRequest();
         request.open('GET', url);
-        request.responseType = 'txt';
+        request.responseType = 'json';
 
         request.onload = function() {
           poemDisplay.textContent = request.response;
