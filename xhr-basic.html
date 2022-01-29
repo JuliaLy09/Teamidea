@@ -114,8 +114,8 @@
         request.send();
       };
       
-      var obj = JSON.parse('request.response');
-      <!-- var obj = JSON.parse('{ "timezone":"Europe/Moscow", "temp":-3.38, "city":"New York"}');-->
+  <!--    var obj = JSON.parse('request.response');-->
+      var obj = JSON.parse('{ "timezone":"Europe/Moscow", "temp":-3.38, "city":"New York"}');
       document.getElementById("api").innerHTML = obj.timezone + ", " + obj.temp; 
       
 
