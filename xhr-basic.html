@@ -246,7 +246,7 @@
                         ];
             let day = daysT.find(item => item.temp == minTemp);
             /*значение лежит в day.id а значение температур в minTemp*/
-            const resumeTemp = 'День с мин. разницей температур:' + ' ' + day.id;
+            const resumeTemp = 'День с мин. разницей температур ночью:' + ' ' + day.id + '(' + minTemp + ' °C)';
 
             const arrD = [fhd1, fhd2, fhd3, fhd4, fhd5];
             const maxD = Math.max(...arrD);
