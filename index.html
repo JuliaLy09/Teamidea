@@ -235,6 +235,7 @@
                         {id: formatdt5, temp: checktemp5}
                         ];
             let day = daysT.find(item => item.temp == minTemp);
+            const minTempd = minTemp.toFixed([2]);
             /*значение лежит в day.id а значение температур в minTemp*/
             
             const arrD = [fhd1, fhd2, fhd3, fhd4, fhd5];
@@ -252,7 +253,7 @@
             /*значение лежит в dayD.id а значение времени в maxD*/
             
             
-            var resume = 'Геопозиция: Санкт Петербург (ширина 59.57, долгота 30.19)' + "\n" + 'День с мин. разницей температур:' + ' ' + day.id + '  (разница ' + minTemp + ' °C)' + "\n" + 'Макс. продолжитьльность дня:' + ' ' + maxDd + 'ч.м (дата: ' + dayD.id + ')';
+            var resume = 'Геопозиция: Санкт Петербург (ширина 59.57, долгота 30.19)' + "\n" + 'День с мин. разницей температур:' + ' ' + day.id + '  (разница ' + minTempd + ' °C)' + "\n" + 'Макс. продолжитьльность дня:' + ' ' + maxDd + 'ч.м (дата: ' + dayD.id + ')';
 
             ObjDisplay.textContent = resume;
             
